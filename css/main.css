@@ -458,7 +458,7 @@ body {
   margin-right: 10px;
 }
 
-.join-link {
+.join-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -469,7 +469,7 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.join-link:hover, .join-link:focus {
+.join-list__link:hover, .join-list__link:focus {
   background-color: var(--accent-color);
 }
 
