@@ -16,14 +16,14 @@
     color: var(--primary-text-color);
 }
 
-.about-us-list {
+.about-us__list {
     display: flex;
     align-items: center;
     margin-left: -30px;
     margin-bottom: -30px;
 }
 
-.about-us-list-item {
+.about-us__list-item {
     position: relative;
     flex-basis: calc(100% - 90px) / 3;
     margin-left: 30px;
@@ -32,7 +32,7 @@
 }
 
 
-.about-us-lable {
+.about-us__lable {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -41,7 +41,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.about-us-paragraph {
+.about-us__paragraph {
     display: inline-block;
     padding: 27px 0;
     font-weight: 700;

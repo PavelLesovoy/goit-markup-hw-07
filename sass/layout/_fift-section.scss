@@ -17,7 +17,7 @@
 }
 
 
-.clients-list-link {
+.clients-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,8 +37,8 @@
     fill: var(--social-links-color);
     transition: fill 250ms var(--timing-function);
 
-    .clients-list-link:hover &,
-    .clients-list-link:focus & {
+    .clients-list__link:hover &,
+    .clients-list__link:focus & {
         fill: var(--accent-color);
     }
 }

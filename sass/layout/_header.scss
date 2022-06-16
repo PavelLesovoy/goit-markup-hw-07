@@ -43,11 +43,11 @@
     color: var(--accent-color);
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-list-link {
+.nav-list__link {
     position: relative;
     font-weight: 500;
     font-size: 14px;
@@ -69,14 +69,14 @@
 }
 
 
-.navigation.nav-list-link {
+.navigation.nav-list__link {
     position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.navigation .nav-list-link.active::after {
+.navigation .nav-list__link.active::after {
     position: absolute;
     bottom: 0;
     left: 0;
