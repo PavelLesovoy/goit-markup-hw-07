@@ -6,7 +6,7 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
     margin-bottom: 50px;
 
 }
@@ -23,22 +23,22 @@
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--social-links-color);
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--timing-function);
 }
 
 .clients-logo {
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--social-links-color);
+    transition: fill 250ms var(--timing-function);
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
-    border-color: #2196f3;
+    border-color: var(--accent-color);
 }
 
 .clients-list-link:hover .clients-logo,
 .clients-list-link:focus .clients-logo {
-    fill: #2196f3;
+    fill: var(--accent-color);
 }
