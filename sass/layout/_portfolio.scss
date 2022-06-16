@@ -6,16 +6,20 @@
     transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.portfolio-department-list-item:hover,
-.portfolio-department-list-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .portfolio-department-list-item {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-bottom: 30px;
     cursor: pointer;
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:hover .project-overlay {
+        transform: translateY(0);
+    }
 }
 
 .project-wrapper {
@@ -34,9 +38,6 @@
     transition: 250ms var(--timing-function);
 }
 
-.portfolio-department-list-item:hover .project-overlay {
-    transform: translateY(0);
-}
 
 .project-text {
     position: absolute;
@@ -77,8 +78,6 @@
     font-size: 16px;
     line-height: 1.87;
     /* identical to box height, or 187% */
-
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
 }

@@ -26,19 +26,19 @@
     border: 1px solid var(--social-links-color);
     border-radius: 4px;
     transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .clients-logo {
     fill: var(--social-links-color);
     transition: fill 250ms var(--timing-function);
-}
 
-.clients-list-link:hover,
-.clients-list-link:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-list-link:hover .clients-logo,
-.clients-list-link:focus .clients-logo {
-    fill: var(--accent-color);
+    .clients-list-link:hover &,
+    .clients-list-link:focus & {
+        fill: var(--accent-color);
+    }
 }

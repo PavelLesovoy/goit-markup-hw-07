@@ -15,9 +15,7 @@
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-
     letter-spacing: 0.03em;
-
     color: var(--background-color-white);
 }
 
@@ -27,17 +25,16 @@
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-
     letter-spacing: 0.03em;
-
     color: var(--links-footer-color);
     transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contact-email-footer:hover,
-.contact-email-footer:focus {
-    color: var(--accent-color);
-}
 
 .contact-number-footer {
     font-style: normal;
@@ -45,17 +42,16 @@
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-
     letter-spacing: 0.03em;
-
     color: var(--links-footer-color);
     transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contact-number-footer:hover,
-.contact-number-footer:focus {
-    color: var(--accent-color);
-}
 
 .footer-list {
     padding-top: 20px;

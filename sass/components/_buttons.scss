@@ -18,11 +18,11 @@
     letter-spacing: 0.06em;
     color: var(--background-color-white);
     border: none;
-}
 
-.services-btn:hover,
-.services-btn:focus {
-    background-color: var(--botton-hover-blue);
+    &:hover,
+    &:focus {
+        background-color: var(--botton-hover-blue);
+    }
 }
 
 .portfolio-btn-list {
@@ -53,16 +53,16 @@
     cursor: pointer;
     border: none;
     transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
-}
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    background: var(--accent-color);
-    /* shadow-middle */
+    &:hover,
+    &:focus {
+        background: var(--accent-color);
+        /* shadow-middle */
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    color: var(--background-color-white);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: var(--background-color-white);
+    }
 }
 
 .subscribe-btn {
@@ -83,9 +83,9 @@
     transition: backgroudn-color 250ms var(--timing-function);
     cursor: pointer;
     border: none;
-}
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background-color: var(--botton-hover-blue);
+    &:hover,
+    &:focus {
+        background-color: var(--botton-hover-blue);
+    }
 }

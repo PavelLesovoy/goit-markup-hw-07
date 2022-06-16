@@ -186,6 +186,11 @@ body {
   cursor: pointer;
 }
 
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--accent-color);
+}
+
 .modal-close-icon:hover,
 .modal-close-icon:focus {
   fill: var(--accent-color);
@@ -237,10 +242,6 @@ body {
   border-color: var(--accent-color);
 }
 
-.contact-form-input:focus + .contact-form-icon {
-  fill: var(--accent-color);
-}
-
 .contact-form-icon {
   position: absolute;
   top: 50%;
@@ -248,6 +249,10 @@ body {
   transform: translateY(-50%);
   display: block;
   transition: 250ms var(--timing-function);
+}
+
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--accent-color);
 }
 
 .contact-form-message {
@@ -362,8 +367,7 @@ body {
   border: none;
 }
 
-.services-btn:hover,
-.services-btn:focus {
+.services-btn:hover, .services-btn:focus {
   background-color: var(--botton-hover-blue);
 }
 
@@ -395,8 +399,7 @@ body {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:hover, .portfolio-btn:focus {
   background: var(--accent-color);
   /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -423,8 +426,7 @@ body {
   border: none;
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-btn:hover, .subscribe-btn:focus {
   background-color: var(--botton-hover-blue);
 }
 
@@ -467,14 +469,13 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
+.join-link:hover, .join-link:focus {
+  background-color: var(--accent-color);
+}
+
 .join-icon {
   fill: var(--background-color-white);
   transition: fill 250ms var(--timing-function);
-}
-
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--accent-color);
 }
 
 .subscribe-block {
@@ -501,8 +502,7 @@ body {
   transition: border 250ms var(--timing-function);
 }
 
-.subscribe-block input:hover,
-.subscribe-block input:focus {
+.subscribe-block input:hover, .subscribe-block input:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -581,8 +581,7 @@ body {
   padding-bottom: 28px;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:hover, .nav-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -606,7 +605,7 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .header-list {
@@ -629,8 +628,7 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.contact-email:hover,
-.contact-email:focus {
+.contact-email:hover, .contact-email:focus {
   color: var(--accent-color);
 }
 
@@ -646,8 +644,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-number:hover,
-.contact-number:focus {
+.contact-number:hover, .contact-number:focus {
   color: var(--accent-color);
 }
 
@@ -872,14 +869,13 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
+.social-list-link:hover, .social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
 .social-list-icon {
   fill: var(--social-links-color);
   transition: fill 250ms var(--timing-function);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -915,14 +911,13 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
+.clients-list-link:hover, .clients-list-link:focus {
+  border-color: var(--accent-color);
+}
+
 .clients-logo {
   fill: var(--social-links-color);
   transition: fill 250ms var(--timing-function);
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border-color: var(--accent-color);
 }
 
 .clients-list-link:hover .clients-logo,
@@ -962,8 +957,7 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.contact-email-footer:hover,
-.contact-email-footer:focus {
+.contact-email-footer:hover, .contact-email-footer:focus {
   color: var(--accent-color);
 }
 
@@ -978,8 +972,7 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.contact-number-footer:hover,
-.contact-number-footer:focus {
+.contact-number-footer:hover, .contact-number-footer:focus {
   color: var(--accent-color);
 }
 
@@ -999,16 +992,19 @@ body {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.portfolio-department-list-item:hover,
-.portfolio-department-list-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-department-list-item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.portfolio-department-list-item:hover, .portfolio-department-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-department-list-item:hover .project-overlay {
+  transform: translateY(0);
 }
 
 .project-wrapper {
@@ -1025,10 +1021,6 @@ body {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: 250ms var(--timing-function);
-}
-
-.portfolio-department-list-item:hover .project-overlay {
-  transform: translateY(0);
 }
 
 .project-text {

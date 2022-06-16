@@ -36,14 +36,14 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .join-icon {
     fill: var(--background-color-white);
     transition: fill 250ms var(--timing-function);
-}
-
-.join-link:hover,
-.join-link:focus {
-    background-color: var(--accent-color);
 }

@@ -29,7 +29,6 @@
     line-height: 1.19;
     margin-right: 92px;
     /* identical to box height */
-
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
@@ -41,7 +40,6 @@
     font-size: 26px;
     line-height: 1, 19;
     letter-spacing: 0.03em;
-
     color: var(--accent-color);
 }
 
@@ -58,16 +56,18 @@
     color: var(--primary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 28px;
+
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    
+    &.active {
+        color: var(--accent-color);
+    }
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
-    color: var(--accent-color);
-}
-
-.nav-list-link.active {
-    color: var(--accent-color);
-}
 
 .navigation.nav-list-link {
     position: relative;
@@ -85,7 +85,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--accent-color);
+    background-color: #2196f3;
 
 }
 
@@ -107,12 +107,13 @@
     margin-right: 30px;
     color: var(--secondary-text-color);
     transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contact-email:hover,
-.contact-email:focus {
-    color: var(--accent-color);
-}
 
 .contact-number {
     display: flex;
@@ -124,12 +125,13 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contact-number:hover,
-.contact-number:focus {
-    color: var(--accent-color);
-}
 
 .header-icon {
     fill: currentColor;
